@@ -1,0 +1,176 @@
+ul{
+    list-style: none;
+}
+
+#menucabeza{
+    height: 8vh;
+    margin: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    /* para que align-content funcione, necesito tener flex-wrap:wrap */
+    align-content: center;
+    font-size: x-small;
+}
+
+.cabeza{
+    height: 5vh;
+    background-color: #232333;
+}
+
+.centro{
+    display: flex;
+    justify-content: center;
+    border-radius: 12px;
+    /* border: 1px ; */
+    height: 100%;
+    font-family: 'Lato','Helvetica','Arial';
+    color: #232333;
+    margin: 2em;
+    /* background-color: #39394d; */
+}
+
+.formulario{
+    display: block;
+    justify-items: center;
+    justify-content: center;
+    padding: 3em;
+    /* border-radius: 12px; */
+    background-color: #fff;
+    border-radius: 0 12px 12px 0;
+    min-height: 450px;
+}
+
+.navbar{
+    height: 5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content:baseline;    
+    /* box-sizing: border-box; */
+    padding: 10px;
+}
+
+.btnSignUp{
+    height: 5vh;
+    background-color: #f26d21;
+    border: 1px solid #f26d21;
+    padding: 3px;
+}
+#menu{
+    height: 8vh;
+    display: flex;
+    flex-direction: row;
+}
+
+a{
+    margin-left: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+
+
+#menu li>a{
+    background-color: white;
+    color: black;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    min-width: 100px;
+}
+
+#menu li>a:hover{
+    color: blue;
+    
+}
+
+#menu>li{
+    float: left;
+    text-align:center
+}
+
+#menu>li>ul{
+    display: none;
+}
+
+#menu>li:hover>ul {
+    display:block;
+}
+/*  */
+
+#menu2 li>a{
+    background-color: white;
+    color: blue;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    min-width: 100px;
+}
+
+#menu2 li>a:hover{
+    color: black;
+    
+}
+
+#menu2>li{
+    float: left;
+    text-align:center
+}
+
+#menu2>li>ul{
+    display: none;
+}
+
+#menu2>li:hover>ul {
+    display:block;
+    
+}
+
+.linkazul{
+    margin-left: 10px;
+    text-decoration: none;
+    color: blue;
+}
+
+.izquierda{
+    background-color: grey;
+    border-radius: 12px;
+    padding: 1em;
+    text-align: center;
+    color: #595959;
+    background-position: center 170px;
+    background-repeat: no-repeat;
+    background-size: 569px;
+    background-image: url("../img/arrow.png");
+}
+
+.btningresar{
+    background-color: blue;
+    color: whitesmoke;
+    min-width: 100px;
+}
+
+.linkgris{
+    margin-left: 10px;
+    text-decoration: none;
+    color: black;
+}
+.imagen{
+    height: 48px;
+    width: 48px;
+    margin: 4px;
+    border: solid;
+}
+
+.imagenes{
+    display: flex;
+    flex-direction: row;
+}
+
+footer{
+    background-color: #232333;
+    display: flex;
+}
+.pblanco{
+    color: white;
+}
