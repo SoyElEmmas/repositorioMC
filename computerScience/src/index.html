@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Star Wars</title>
+
+    <!-- Import the webpage's stylesheet -->
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./swapi.js" ></script>
+  </head>
+  <body>
+    <div class="bdy">
+        <div>
+            <img src="../img/star-wars-logo-987.png" alt="star wars logo design" />
+        </div>
+        <div class = 'input'>
+            <input id="input_character_name" placeholder="Ingresa tu búsqueda"/>
+            <button onclick="search_character_button_click()">
+               Buscar
+            </button>
+        </div>
+        <div id="container" class="hide">
+            <div id="titulo"></div>
+            <div id="resultados" class="resultados"></div>
+        </div>
+    </div>
+    <script src="./script.js" ></script>
+  </body>
+</html>

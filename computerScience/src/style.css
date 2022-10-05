@@ -1,0 +1,60 @@
+body{
+    background-color: midnightblue;
+}
+
+.bdy{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.input{
+    padding: 5%;
+}
+
+.hide{
+    display: none;
+}
+
+.render{
+    background-color: dimgray;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    /* flex-wrap: wrap; */
+    padding: 2%;
+    /* text-align: center; */
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.resultados{
+    background-color: darkslategrey;
+    padding: 3%;
+    /* margin: 10%; */
+    display: flex;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    justify-content: center;
+    align-items: stretch;
+}
+
+.cuadrito{
+    background-color: darkolivegreen;
+    border: black solid 1px;
+    padding: 2%;
+    /* align-items: stretch; */
+}
+
+.contenido{
+    border-radius: 5%;
+    border: solid;
+    background-color: grey;
+    /* align-items: stretch; */
+}
