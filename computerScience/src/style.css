@@ -1,5 +1,7 @@
 body{
     background-color: midnightblue;
+    background-image: url('../img/fondo.jpg');
+    background-attachment: fixed;
 }
 
 .bdy{
@@ -17,13 +19,10 @@ body{
 }
 
 .render{
-    background-color: dimgray;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
-    /* flex-wrap: wrap; */
-    padding: 2%;
-    /* text-align: center; */
+    padding: 1%;
+    color: aliceblue;
 }
 
 .titulo{
@@ -31,30 +30,91 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .resultados{
-    background-color: darkslategrey;
-    padding: 3%;
-    /* margin: 10%; */
+    /* background-color: darkslategrey; */
+    /* background-image: url('../img/fondo_results.png'); */
+    /* background-repeat: round;
+    background-size: contain;
+    background-position-x:center;
+    background-position-y:center; */
+    padding: 5%;
     display: flex;
-    /* flex-direction: row; */
-    flex-wrap: wrap;
-    /* justify-content: center; */
+    flex-wrap: wrap-reverse;
     justify-content: center;
-    align-items: stretch;
 }
 
 .cuadrito{
-    background-color: darkolivegreen;
-    border: black solid 1px;
-    padding: 2%;
+    border-radius: 3%;
+    border: solid;
+    /* border-color: aliceblue; */
+    border-color: darkolivegreen;
+    /* border: black solid 1px; */
+    padding: 1%;
+    margin: 1%;
     /* align-items: stretch; */
+    width: auto;
+    height: auto;
 }
 
 .contenido{
-    border-radius: 5%;
+    border-radius: 7%;
     border: solid;
+    /* border-color: aliceblue; */
     background-color: grey;
-    /* align-items: stretch; */
+    padding: 2%;
+    margin: 2%;
+    color: black;
 }
+
+.divimg{
+    margin: 10%;
+    padding:10%;
+}
+
+.tamano-1{
+    width : 100px;
+    height: 100px;
+}
+
+img{
+    /* display: block; */
+    object-fit: fill;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    height:100%;
+}
+
+.name{
+    color: honeydew;
+    font-size: x-large;
+    font-family: fantasy;
+    border-radius: 7%;
+    border: solid;
+    padding: 2%;
+    margin: 2%;
+}
+
+.img:hover {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.5s;
+  
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+  }
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }

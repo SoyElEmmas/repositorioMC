@@ -8,22 +8,27 @@ function search_character_button_click() {
     let results = 
     `<div class='titulo'>
         <div>
-          <h3>Resultados de la búsqueda</h3>
+           <h2>Resultados de la búsqueda</h2>
         </div>
      </div>`
     titulo.innerHTML = results
     results = ""
+    var pic = ""
     
     let res_characters = search_characters(input_character_name.value)
     for(let i = 0; i<res_characters.length; i++) {
+        pic = pic_name(res_characters[i].name)
       results += `
         <div class='cuadrito'>
-          <div class = 'contenido'>Name: ${res_characters[i].name}</div>
+          <div class = 'divimg tamano-1'><img class='img' src="${pic}" alt="sin imagen"></div>
+          <div class = 'name'>Name: ${res_characters[i].name}</div>
           <div class = 'contenido'>BirthYear: ${res_characters[i].birth_year}</div>
           <div class = 'contenido'>Gender: ${res_characters[i].gender}</div>
+          <div class = 'contenido'>Height: ${res_characters[i].height}</div>
+          <div class = 'contenido'>Mass: ${res_characters[i].mass}</div>
         </div>
-        <br/>
       `
+      pic = ""
     }
     if(results.length >0){
        resultados.innerHTML = results
@@ -31,7 +36,7 @@ function search_character_button_click() {
     }else{
         clean_resultSet()
         let results =`<div class='titulo'>
-                         <div>
+                         <div class='cuadrito'>
                             <h3>Sin resultados para: "${input_character_name.value}"</h3>
                          </div>
                       </div>`
@@ -69,6 +74,17 @@ function search_characters(character_name) {
 function cambiarClase(elemento,claseQuitar,clasePoner){
     elemento.classList.remove(`${claseQuitar}`)
     elemento.classList.add(`${clasePoner}`)
+}
+
+function pic_name(item){
+    var regex = new RegExp('\\s');
+    var newItem = ''; //item;
+    console.log(regex);
+    //newItem.replace(regex,'');
+    newItem = item.replace(regex,'');
+    console.log(item.replace(regex,''));
+    console.log(newItem);
+    return '../img/'+newItem.toLowerCase()+'.png';
 }
 
 class Character {
