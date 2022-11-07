@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styleTransacciones.css" />
+    <title>Cajero automático</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1>El Banco de tus Finanzas</h1>
+    </header>
+    <section >
+      <form action="" id="transacciones" class="flex-container">
+        <div class="operacion">
+          <div class="texto">Consultar Saldo</div>
+          <img class="imagen" src="../img/consultar.png" alt="Consultar" />
+          <button type="button" class="boton" id="btnsaldo" onclick="fnSaldo()">Consultar</button>
+        </div>
+        <div class="operacion">
+          <div class="texto">Depósitos</div>
+          <img class="imagen" src="../img/depositar.png" alt="Depositar" />
+          <button type="button" class="boton" id="btnDepositar" onclick="fnDepositar()">Depositar</button>
+        </div>
+        <div class="operacion">
+          <div class="texto">Retiros</div>
+          <img class="imagen" src="../img/retirar.jpg" alt="Retirar" />
+          <button type="button" class="boton" id="btnRetirar" onclick="fnRetirar()">Retirar</button>
+          <span id="txtSaldo" class="hide"></span>
+        </div>
+        <div class="operacion">
+          <div class="texto">Cerrar sesión</div>
+          <img class="imagen" src="../img/salir.png" alt="Salir" />
+          <button type="button" id="btnSalir" class="boton" onclick="fnSalir()">Salir</button>
+        </div>
+        <div id="divSaldo" class="hide">
+          <span id="span1" class="texto"></span>
+        </div>
+        <div id="depositar" class="hide">
+          <input
+            placeholder="Ingresa la cantidad a depositar"
+            type="number"
+            name="montoIngresar"
+            id="monto"
+            class="customInput"
+          />
+          <button type="button" class="boton" id="actDepositar" onclick="fnSuma()">Depositar</button>
+          <span id="txtErrorDep" class="hide"></span>
+        </div>
+        <div id="retirar" class="hide">
+          <input
+            placeholder="Ingresa la cantidad a retirar"
+            type="number"
+            name="montoIngresar"
+            id="montoRetiro"
+            class="customInput"
+          />
+          <button type="button" class="boton" id="actRetirar" onclick="fnResta()">Retirar</button>
+        </div>
+      </form>
+    </section>
+    <script src="./transaccionesScript.js"></script>
+  </body>
+</html>
